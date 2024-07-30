@@ -5,12 +5,10 @@ import { useHistory } from "react-router-dom";
 import "./Task.css";
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
-	};
-
-	return (
-		<div
-			className="task-container"
-			style={task.completed ? { borderLeft: "6px solid chartreuse" } : {}}
+    return (
+        <div
+        className="task-container"
+        style={task.completed ? { borderLeft: "6px solid chartreuse" } : {}}
 		>
 			<div className="task-title" onClick={() => handleTaskClick(task.id)}>
 				{task.title}
@@ -20,18 +18,19 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
 				<button
 					className="remove-task-button"
 					onClick={() => handleTaskDeletion(task.id)}
-				>
+                    >
 					<CgClose />
 				</button>
 				<button
 					className="see-task-details-button"
 					onClick={handleTaskDetailsClick}
-				>
+                    >
 					<CgInfo />
 				</button>
 			</div>
 		</div>
 	);
+};
 
 
 export default Task;
