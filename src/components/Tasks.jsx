@@ -12,7 +12,7 @@ const Tasks = ({ tasks, handleTaskClick, handleTaskDeletion }) => {
 					handleTaskClick={handleTaskClick}
 					handleTaskDeletion={handleTaskDeletion}
 				/>
-			))}
+			))};
 		</>
 	);
 };
