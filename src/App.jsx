@@ -55,10 +55,10 @@ const App = () => {
 	};
 
 	return (
-		<Route>
+		<Router>
 			<div className="container">
 				<Header />
-				<Router
+				<Route
 					path="/"
 					exact
 					render={() => (
@@ -74,7 +74,7 @@ const App = () => {
 				/>
 				<Router path="/:taskTitle" exact component={TaskDetails} />
 			</div>
-		</Route>
+		</Router>
 	);
 };
 
